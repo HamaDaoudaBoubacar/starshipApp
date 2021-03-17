@@ -3,23 +3,14 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import StarShipScreen from './src/screens/StarShipScreen';
 
-
 const App = () => {
+  const queryClient = new QueryClient();
 
-    const queryClient = new QueryClient
-
-    return (
-        <QueryClientProvider client={queryClient}>
-
-
-            <StarShipScreen />
-
-
-        </QueryClientProvider>
-
-    );
+  return (
+    <QueryClientProvider client={queryClient}>
+      <StarShipScreen />
+    </QueryClientProvider>
+  );
 };
-
-
 
 export default App;
