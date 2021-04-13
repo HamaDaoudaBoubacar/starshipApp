@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { Button, TextInput } from 'react-native-paper';
-export default function App() {
+export default function LoginScreen() {
   function firstPressed() {
     console.log('ok');
   }
