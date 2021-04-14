@@ -14,7 +14,7 @@ const StarshipContainer = () => {
 
     const showModal = () => setVisible(true);
     const hideModal = () => setVisible(false);
-    const containerStyle = { backgroundColor: 'white', padding: 20 };
+    const containerStyle = { backgroundColor: 'white', padding: 10};
 
     if (status === 'loading') {
         return (

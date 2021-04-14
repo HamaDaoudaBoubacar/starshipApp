@@ -1,5 +1,5 @@
 // App.tsx
-import  LoginScreen  from './src/screens/LoginScreen';
+/*import  LoginScreen  from './src/screens/LoginScreen';
 import StorybookUIRoot from './storybook';
 
 // Should we show storybook instead of our app?
@@ -9,8 +9,8 @@ const SHOW_STORYBOOK = false;
 
 const UI = SHOW_STORYBOOK && __DEV__ ? StorybookUIRoot : LoginScreen;
 export default UI;
-
-/*import React from 'react';
+*/
+import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import StarShipScreen from './src/screens/StarShipScreen';
 import {Provider } from 'react-native-paper';
@@ -32,4 +32,3 @@ const App = () => {
 };
 
 export default App;
-*/
