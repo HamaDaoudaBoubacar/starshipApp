@@ -1,4 +1,20 @@
 // App.tsx
+import React from 'react';
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider } from '@ui-kitten/components';
+import { NavigationContainer } from '@react-navigation/native';
+import { MyStack } from './src/navigation/Navigator';
+
+export default () => {
+  return (
+    <ApplicationProvider {...eva} theme={eva.light}>
+      <NavigationContainer onStateChange={state => console.log('New state is', state)}>
+      <MyStack /> 
+      </NavigationContainer>
+    </ApplicationProvider>
+  );
+};
+
 /*import  LoginScreen  from './src/screens/LoginScreen';
 import StorybookUIRoot from './storybook';
 
@@ -10,9 +26,10 @@ const SHOW_STORYBOOK = false;
 const UI = SHOW_STORYBOOK && __DEV__ ? StorybookUIRoot : LoginScreen;
 export default UI;
 */
+/*
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import StarShipScreen from './src/screens/StarShipScreen';
+import { MyStack } from './src/navigation/Navigator';
 import {Provider } from 'react-native-paper';
 
 //import { LoginScreen as App } from './src/screens/LoginScreen';
@@ -23,7 +40,7 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
          <Provider>
-          <StarShipScreen /> 
+          <MyStack /> 
         </Provider>
     </QueryClientProvider>
    
@@ -32,3 +49,5 @@ const App = () => {
 };
 
 export default App;
+*/
+
